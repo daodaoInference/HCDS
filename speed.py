@@ -3,12 +3,9 @@ from transformers import AutoTokenizer
 import numpy as np
 
 tokenizer=AutoTokenizer.from_pretrained("/gf3/home/lzq/model/Llama-2-7b-chat-hf/")
-jsonl_file = "/gf3/home/zlb/HCSD+gpu_cpu_offload+last/humaneval/gf3/home/zlb/HCSD+gpu_cpu_offload+last/partial-offload+SD/output_16-7-10-humaneval_last_10_last_2-temperature-0.0.jsonl"
-# jsonl_file ="/gf3/home/lzq/EAGLE-2080/EAGLE/mt_bench/ess-llama-2-chat-7b-fp16-cpu-temperature-0.0.jsonl"
-# jsonl_file_base = "/gf3/home/zlb/HCSD+gpu_cpu_offload+last/humaneval/gf3/home/zlb/HCSD+gpu_cpu_offload+last/hf_offload/output_16-7-10-humaneval_last_1-temperature-0.0.jsonl"
-jsonl_file_base = "/gf3/home/zlb/HCSD+gpu_cpu_offload+last/humaneval/gf3/home/zlb/HCSD+gpu_cpu_offload+last/CPU-only/output_16-7-10-humaneval_last-temperature-0.0.jsonl"
+jsonl_file = "output_16-7-10-humaneval_hcsd-temperature-0.0.jsonl"
+jsonl_file_base = "output_16-7-10-humaneval-temperature-0.0.jsonl"
 
-jsonl_file_baseddd = "/gf3/home/zlb/EAGLE-train/humaneval/humaneval_gn8_onlycpu-24-qint8-temperature-0.0.jsonl,/gf3/home/zlb/EAGLE-train/humaneval/a800_layer_1_norm_0_output_16-7-10_humaneval_gn8-cpu-int8-gpu-bfloat16-gn8-2-temperature-0.0.jsonl"
 print(jsonl_file)
 print(jsonl_file_base)
 data = []
