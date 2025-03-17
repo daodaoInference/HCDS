@@ -9,7 +9,7 @@ HCSD combines speculative decoding characteristics with heterogeneous architectu
 
 ```bash
 git clone https://github.com/daodaoInference/HCDS.git
-cd EAGLE
+cd HCSD
 pip install -r requirements.txt
 ```
 
